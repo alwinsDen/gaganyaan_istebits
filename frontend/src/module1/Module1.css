@@ -1,4 +1,16 @@
 .module1 {
   color: red;
+  height: 100vh;
+  width: 100vw;
+  background: green;
+}
+
+@media only screen and (max-width: 500px) {
+  .module1 {
+    color: yellow;
+    background: red;
+    height: 100vh;
+    width: 100vw;
+  }
 }
 /*# sourceMappingURL=Module1.css.map */
