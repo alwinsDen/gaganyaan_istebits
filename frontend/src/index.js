@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import App from './App'
 import {Module1} from './module1/Module1'
 import {Module2} from './module2/Module2'
 import reportWebVitals from './reportWebVitals';
@@ -11,6 +12,9 @@ ReactDOM.render(
   <HashRouter>
     <Switch>
       <Route exact path="/">
+        <App/>
+      </Route>
+      <Route path="/module1">
         <Module1 /> 
       </Route>
       <Route path="/module2">
