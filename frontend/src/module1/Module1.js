@@ -40,7 +40,8 @@ export const Module1 = () => {
             scene.add(model);
         }, (xhr) => {
             console.log( ( xhr.loaded / xhr.total * 100 ) + '% loaded' );
-            document.getElementById("loaderpercent").innerHTML = `${( xhr.loaded / xhr.total * 100 ) + '% loaded'}`
+            document.getElementById("loaderpercent").innerHTML = `${( xhr.loaded / xhr.total * 100 )+'%'}`
+            document.getElementById("loaderRender").value = 50;
         }, (error)=>{
             console.log(error);
         })
@@ -94,7 +95,10 @@ export const Module1 = () => {
     }
         return (
         <div id="module1" className="module1">
-            <p id="loaderpercent"></p>
+            <div className="loadersSec">
+                <p id="loaderpercent"></p>
+                <progress  id="loaderRender" max="100"> </progress>
+            </div>
         </div>
     )
 }

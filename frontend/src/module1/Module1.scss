@@ -8,11 +8,20 @@
         align-items: center;
         width: 80vw;
         overflow: hidden;
-        p{
-            color:yellow;
+        .loadersSec{
             position: absolute;
-            font-size: 8rem;
-            background:rgba(100, 94, 94, 0.637)
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            p{
+                color:yellow;
+                font-size: 8rem;
+                background:rgba(100, 94, 94, 0.637)
+            }
+            progress{
+                color:yellow;
+            }
         }
     }
 }
@@ -25,11 +34,20 @@
         justify-content: center;
         align-items: center;
         overflow: hidden;
-        p{
-            color:yellow;
+        .loadersSec{
             position: absolute;
-            font-size: 3rem;
-            background:rgba(100, 94, 94, 0.637)
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            p{
+                color:yellow;
+                font-size: 3rem;
+                background:rgba(100, 94, 94, 0.637)
+            }
+            progress{
+                color:yellow;
+            }
         }
     }
 }

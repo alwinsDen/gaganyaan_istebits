@@ -15,11 +15,29 @@
     width: 80vw;
     overflow: hidden;
   }
-  .module1 p {
-    color: yellow;
+  .module1 .loadersSec {
     position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .module1 .loadersSec p {
+    color: yellow;
     font-size: 8rem;
     background: rgba(100, 94, 94, 0.637);
+  }
+  .module1 .loadersSec progress {
+    color: yellow;
   }
 }
 
@@ -39,11 +57,29 @@
             align-items: center;
     overflow: hidden;
   }
-  .module1 p {
-    color: yellow;
+  .module1 .loadersSec {
     position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .module1 .loadersSec p {
+    color: yellow;
     font-size: 3rem;
     background: rgba(100, 94, 94, 0.637);
+  }
+  .module1 .loadersSec progress {
+    color: yellow;
   }
 }
 /*# sourceMappingURL=Module1.css.map */
