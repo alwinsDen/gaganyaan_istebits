@@ -1,6 +1,6 @@
 @media only screen and (min-width: 500px) {
   .module1 {
-    border: 8px black white;
+    border: 2px solid white;
     border-radius: 30px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -8,6 +8,7 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    background-color: red;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -20,6 +21,7 @@
   .module1 {
     border: 8px black dashed;
     border-radius: 30px;
+    height: 100vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

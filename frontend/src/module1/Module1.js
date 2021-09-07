@@ -1,4 +1,4 @@
-import React,{useEffect} from 'react'
+import React,{useEffect,useState} from 'react'
 import "./Module1.css"
 import * as THREE from 'three'
 import {GLTFLoader} from 'three/examples/jsm/loaders/GLTFLoader'
@@ -8,12 +8,21 @@ import filepath from './Perseverance.glb'
 export const Module1 = () => {
     useEffect(()=>
     {
+        console.log(window.innerWidth);
         animation();
     },[])
     const animation=()=> {
         const scene = new THREE.Scene()
-        scene.background = new THREE.Color('grey');
-    
+        const imageLoader = new THREE.TextureLoader();
+        imageLoader.load('https://images.pexels.com/photos/87651/earth-blue-planet-globe-planet-87651.jpeg',(texture)=>{
+
+            // scene.background = null;
+            scene.background = texture;
+            // scene.background.covered = true;
+        })
+        // // scene.background = new THREE.Color('grey');
+        
+
         //!GLTF importing
         const loader = new GLTFLoader();
         loader.load(filepath,function(gltf){
@@ -32,7 +41,7 @@ export const Module1 = () => {
         light.position.set(2,2,0)
         scene.add(light)
     
-        const camera = new THREE.PerspectiveCamera(35, window.innerWidth/480, 0.1, 1000)
+        const camera = new THREE.PerspectiveCamera(window.innerWidth >400 ?30 :50, window.innerWidth/480, 0.1, 1000)
         
         //lighting
         var width = 100;
