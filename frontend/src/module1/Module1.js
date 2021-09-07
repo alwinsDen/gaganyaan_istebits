@@ -44,7 +44,13 @@ export const Module1 = () => {
 //             const string = "0123456789";
 // console.log(string.slice(0, 2)); // "01"    
             document.getElementById("loaderpercent").innerHTML = `${loadNumber+'%'}`
-            document.getElementById("loaderRender").value = (loadNumber == "Inf" ? 100 :parseInt(loadNumber));
+            document.getElementById("loaderRender").value = (loadNumber === "Inf" ? 100 :parseInt(loadNumber));
+            // if (loadNumber == "Inf") document.getElementById("loadersSec").style.display = 'none'; 
+            const loaderDoc = document.getElementById("loadersSec");
+            if (loaderDoc !== null || loaderDoc !== undefined) {
+                if (loadNumber === "Inf" || loadNumber==="100") 
+                    document.getElementById("loadersSec").style.display = 'none'; 
+            }
         }, (error)=>{
             console.log(error);
         })
@@ -98,9 +104,9 @@ export const Module1 = () => {
     }
         return (
         <div id="module1" className="module1">
-            <div className="loadersSec">
+            <div className="loadersSec" id="loadersSec">
                 <p id="loaderpercent"></p>
-                <progress  id="loaderRender" max="100"> </progress>
+                <progress  id="loaderRender" max="100"></progress>
             </div>
         </div>
     )
