@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Glory&display=swap");
+.module0 {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.module0 p {
+  font-family: 'glory';
+}
+
+@media only screen and (min-width: 500px) {
+  .module0 {
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .module0 .heading {
+    font-size: 4rem;
+  }
+  .module0 .subheading {
+    font-style: italic;
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .module0 {
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .module0 .heading {
+    font-size: 4rem;
+  }
+  .module0 .subheading {
+    font-style: italic;
+    font-size: 1.5rem;
+  }
+}
+/*# sourceMappingURL=Module0.css.map */
