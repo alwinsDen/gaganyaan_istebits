@@ -45,7 +45,7 @@ export const Module1 = () => {
 // console.log(string.slice(0, 2)); // "01"    
             document.getElementById("loaderpercent").innerHTML = `${loadNumber+'%'}`
             document.getElementById("loaderRender").value = (loadNumber === "Inf" ? 100 :parseInt(loadNumber));
-            // if (loadNumber == "Inf") document.getElementById("loadersSec").style.display = 'none'; 
+            if (loadNumber == "Inf") document.getElementById("loadersSec").style.display = 'none'; 
             const loaderDoc = document.getElementById("loadersSec");
             if (loaderDoc !== null || loaderDoc !== undefined) {
                 if (loadNumber === "Inf" || loadNumber==="100") 
@@ -107,7 +107,9 @@ export const Module1 = () => {
             <div className="loadersSec" id="loadersSec">
                 <p id="loaderpercent"></p>
                 <progress  id="loaderRender" max="100"></progress>
+                <p className="d3Env">Loading 3d environment</p>
             </div>
+            
         </div>
     )
 }

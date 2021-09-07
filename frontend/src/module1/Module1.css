@@ -1,7 +1,7 @@
 @media only screen and (min-width: 500px) {
   .module1 {
-    border: 2px solid white;
-    border-radius: 30px;
+    border: 1px white solid;
+    border-radius: 10px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -31,19 +31,33 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .module1 .loadersSec p {
-    color: yellow;
-    font-size: 8rem;
-    background: rgba(100, 94, 94, 0.637);
+  .module1 .loadersSec #loaderpercent {
+    color: white;
+    font-size: 10rem;
+    background: black;
+    border-radius: 50px 50px 0 0;
   }
   .module1 .loadersSec progress {
-    color: yellow;
+    border: 2px white solid;
+    border-radius: 1rem;
+    overflow: hidden;
+    background: white;
+    height: 1rem;
+  }
+  .module1 .loadersSec .d3Env {
+    font-size: 3rem;
+    background: black;
+    padding: 0 10 0 10;
+    font-weight: 800;
+    color: white;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
 }
 
 @media only screen and (max-width: 500px) {
   .module1 {
-    border: 4px white solid;
+    border: 2px orange solid;
     border-radius: 30px;
     height: 100vw;
     display: -webkit-box;
@@ -73,13 +87,24 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .module1 .loadersSec p {
-    color: yellow;
-    font-size: 3rem;
-    background: rgba(100, 94, 94, 0.637);
+  .module1 .loadersSec #loaderpercent {
+    color: orange;
+    font-size: 4.5rem;
+    font-weight: 600;
+    background: white;
+    border-radius: 10px 10px 0 0;
   }
   .module1 .loadersSec progress {
-    color: yellow;
+    border: 2px white solid;
+    overflow: hidden;
+  }
+  .module1 .loadersSec .d3Env {
+    font-size: 1.5rem;
+    background: white;
+    font-weight: 800;
+    color: orange;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
 }
 /*# sourceMappingURL=Module1.css.map */

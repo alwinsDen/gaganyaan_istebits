@@ -10,10 +10,14 @@
         align-items: center;
         justify-content: center;
     }
+    &::-webkit-scrollbar {
+        display: none;
+      }
     background: url(https://raw.githubusercontent.com/alwinsDen/gaganyaan_istebits/main/frontend/src/wallpapers/main%20background.jpg?token=ASAE6PXQUKBWIKXFPBYCV5TBIA2VY);
     background-position: fixed;
     background-repeat: no-repeat;
     background-size: cover;
+    overflow-y: scroll;
     height:100vh;
     h1 {
         color:red

@@ -10,6 +10,7 @@
   background-position: fixed;
   background-repeat: no-repeat;
   background-size: cover;
+  overflow-y: scroll;
   height: 100vh;
 }
 
@@ -27,6 +28,10 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.App::-webkit-scrollbar {
+  display: none;
 }
 
 .App h1 {

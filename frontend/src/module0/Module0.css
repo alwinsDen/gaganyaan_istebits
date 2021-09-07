@@ -46,11 +46,12 @@
             justify-content: center;
   }
   .module0 .heading {
-    font-size: 4rem;
+    font-size: 3rem;
   }
-  .module0 .subheading {
+  .module0 .subheading > * {
     font-style: italic;
     font-size: 1.5rem;
+    font-family: 'glory';
   }
 }
 /*# sourceMappingURL=Module0.css.map */
