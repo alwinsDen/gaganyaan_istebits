@@ -13,15 +13,22 @@ export const Module1 = () => {
     },[])
     const animation=()=> {
         const scene = new THREE.Scene()
-        const imageLoader = new THREE.TextureLoader();
-        imageLoader.load('https://images.pexels.com/photos/87651/earth-blue-planet-globe-planet-87651.jpeg',(texture)=>{
+        // const imageLoader = new THREE.TextureLoader();
+        // imageLoader.load('https://images.pexels.com/photos/87651/earth-blue-planet-globe-planet-87651.jpeg',(texture)=>{
 
-            // scene.background = null;
-            scene.background = texture;
-            // scene.background.covered = true;
-        })
+        //     // scene.background = null;
+        //     scene.background = texture;
+        //     // scene.background.covered = true;
+        // })
         // // scene.background = new THREE.Color('grey');
-        
+        const imageLoader = new THREE.TextureLoader();
+        const texture = imageLoader.load(
+      'https://cdn.eso.org/images/publicationjpg/potw1105a.jpg',
+      () => {
+        const rt = new THREE.WebGLCubeRenderTarget(texture.image.height);
+        rt.fromEquirectangularTexture(renderer, texture);
+        scene.background = rt.texture;
+      });
 
         //!GLTF importing
         const loader = new GLTFLoader();
@@ -32,7 +39,8 @@ export const Module1 = () => {
             model.rotation.set(0,0,0)
             scene.add(model);
         }, (xhr) => {
-             console.log( ( xhr.loaded / xhr.total * 100 ) + '% loaded' );
+            console.log( ( xhr.loaded / xhr.total * 100 ) + '% loaded' );
+            document.getElementById("loaderpercent").innerHTML = `${( xhr.loaded / xhr.total * 100 ) + '% loaded'}`
         }, (error)=>{
             console.log(error);
         })
@@ -41,7 +49,7 @@ export const Module1 = () => {
         light.position.set(2,2,0)
         scene.add(light)
     
-        const camera = new THREE.PerspectiveCamera(window.innerWidth >400 ?30 :50, window.innerWidth/480, 0.1, 1000)
+        const camera = new THREE.PerspectiveCamera(window.innerWidth >400 ?40 :45, window.innerWidth/480, 0.1, 1000)
         
         //lighting
         var width = 100;
@@ -86,8 +94,7 @@ export const Module1 = () => {
     }
         return (
         <div id="module1" className="module1">
-            {/* <p>This is a test line...</p>
-            <p>herror</p> */}
+            <p id="loaderpercent"></p>
         </div>
     )
 }

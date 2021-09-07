@@ -15,11 +15,17 @@
     width: 80vw;
     overflow: hidden;
   }
+  .module1 p {
+    color: yellow;
+    position: absolute;
+    font-size: 8rem;
+    background: rgba(100, 94, 94, 0.637);
+  }
 }
 
 @media only screen and (max-width: 500px) {
   .module1 {
-    border: 8px black dashed;
+    border: 4px white solid;
     border-radius: 30px;
     height: 100vw;
     display: -webkit-box;
@@ -32,6 +38,12 @@
         -ms-flex-align: center;
             align-items: center;
     overflow: hidden;
+  }
+  .module1 p {
+    color: yellow;
+    position: absolute;
+    font-size: 3rem;
+    background: rgba(100, 94, 94, 0.637);
   }
 }
 /*# sourceMappingURL=Module1.css.map */

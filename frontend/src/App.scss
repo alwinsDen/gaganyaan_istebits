@@ -4,10 +4,17 @@
     box-sizing: border-box;
 }
 .App {
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    .subApp{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    background: url(https://raw.githubusercontent.com/alwinsDen/gaganyaan_istebits/main/frontend/src/wallpapers/main%20background.jpg?token=ASAE6PXQUKBWIKXFPBYCV5TBIA2VY);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100vh;
     h1 {
         color:red
     }
