@@ -8,7 +8,6 @@ import filepath from './Perseverance.glb'
 export const Module1 = () => {
     useEffect(()=>
     {
-        console.log(window.innerWidth);
         animation();
     },[])
     const animation=()=> {
@@ -39,9 +38,13 @@ export const Module1 = () => {
             model.rotation.set(0,0,0)
             scene.add(model);
         }, (xhr) => {
-            console.log( ( xhr.loaded / xhr.total * 100 ) + '% loaded' );
-            document.getElementById("loaderpercent").innerHTML = `${( xhr.loaded / xhr.total * 100 )+'%'}`
-            document.getElementById("loaderRender").value = 50;
+            // console.log( ( xhr.loaded / xhr.total * 100 ) + '% loaded' );
+            let loadNumber = (xhr.loaded/xhr.total*100).toString().slice(0,3);
+            // console.log(loadNumber.toString().slice(0,2))
+//             const string = "0123456789";
+// console.log(string.slice(0, 2)); // "01"    
+            document.getElementById("loaderpercent").innerHTML = `${loadNumber+'%'}`
+            document.getElementById("loaderRender").value = (loadNumber == "Inf" ? 100 :parseInt(loadNumber));
         }, (error)=>{
             console.log(error);
         })
