@@ -4,11 +4,14 @@ import * as THREE from 'three'
 import {GLTFLoader} from 'three/examples/jsm/loaders/GLTFLoader'
 import {OrbitControls} from "three/examples/jsm/controls/OrbitControls";
 import filepath from './Perseverance.glb'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {faKeyboard, faMouse, faPlus} from "@fortawesome/free-solid-svg-icons"
 
 export const Module1 = () => {
     useEffect(()=>
     {
         animation();
+        document.getElementById("instuctionScreen").style.display = "none";
     },[])
     const animation=()=> {
         const scene = new THREE.Scene()
@@ -49,7 +52,11 @@ export const Module1 = () => {
             const loaderDoc = document.getElementById("loadersSec");
             if (loaderDoc !== null || loaderDoc !== undefined) {
                 if (loadNumber === "Inf" || loadNumber==="100") 
-                    document.getElementById("loadersSec").style.display = 'none'; 
+                {
+                    document.getElementById("loadersSec").style.display = 'none';
+                    document.getElementById("instuctionScreen").style.display = "";
+                }
+
             }
         }, (error)=>{
             console.log(error);
@@ -109,7 +116,32 @@ export const Module1 = () => {
                 <progress  id="loaderRender" max="100"></progress>
                 <p className="d3Env">Loading 3d environment</p>
             </div>
-            
+            <div className="instuctionScreen" id="instuctionScreen"
+            onClick={
+                (e)=>
+                document.getElementById("instuctionScreen").style.display = "none" 
+            }
+            >
+                <div>
+                    <FontAwesomeIcon icon={faMouse}
+                    className="mouseIcon1"
+                    />
+                    <p>
+                        Click mouse 
+                    </p>
+                </div>
+                <div>
+                    <FontAwesomeIcon icon={faPlus} className="plusIcon"/>
+                </div>
+                <div>
+                    <FontAwesomeIcon icon={faKeyboard}
+                    className="keyboardIcon1"
+                    />
+                    <p>
+                        Shift key
+                    </p>
+                </div>
+            </div>
         </div>
     )
 }

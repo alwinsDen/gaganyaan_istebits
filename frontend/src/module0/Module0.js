@@ -6,9 +6,12 @@ export const Module0 = () => {
     return (
         <div className="module0">
             <p className="heading">
-                <FontAwesomeIcon icon={faRocket}/>
+                <FontAwesomeIcon icon={faRocket}
+                className="rocketLogo"
+                />
                 Gaganyaan
-                <FontAwesomeIcon icon={faMoon}/>
+                <FontAwesomeIcon icon={faMoon}
+                className="moonLogo"/>
             </p>
             <p className="subheading">
                 <span

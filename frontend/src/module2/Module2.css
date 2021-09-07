@@ -1,4 +1,44 @@
-.Module2 {
-  color: green;
+@import url("https://fonts.googleapis.com/css2?family=Glory&display=swap");
+@media only screen and (min-width: 500px) {
+  .module2 {
+    width: 80vw;
+    background: orange;
+  }
+  .module2 .question1 .quesDet1 .summ1 {
+    color: red;
+    padding: .5rem;
+    font-size: 1.4rem;
+    font-family: 'Glory', sans-serif;
+    font-weight: 800;
+    color: white;
+    border-bottom: .1rem white solid;
+  }
+  .module2 .question1 .quesDet1 div {
+    padding: .5rem;
+  }
+  .module2 .question1 .quesDet1 div p {
+    color: white;
+    font-family: 'Glory', sans-serif;
+    font-style: italic;
+    font-size: 1.2rem;
+  }
+  .module2 .question1 .quesDet2 .summ2 {
+    color: red;
+    padding: .5rem;
+    font-size: 1.4rem;
+    font-family: 'Glory', sans-serif;
+    font-weight: 800;
+    color: white;
+    border-bottom: .1rem white solid;
+  }
+  .module2 .question1 .quesDet2 div {
+    padding: .5rem;
+  }
+  .module2 .question1 .quesDet2 div p {
+    color: white;
+    font-family: 'Glory', sans-serif;
+    font-style: italic;
+    font-size: 1.2rem;
+  }
 }
 /*# sourceMappingURL=Module2.css.map */

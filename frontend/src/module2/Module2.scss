@@ -1,3 +1,53 @@
-.Module2 {
-    color:green
+@import url('https://fonts.googleapis.com/css2?family=Glory&display=swap');
+@media only screen and (min-width: 500px) {
+    .module2 {
+        width: 80vw;
+        background:orange;
+        .question1{
+            .quesDet1 {
+                .summ1 {
+                    color:red;
+                    padding:.5rem;
+                    font-size:1.4rem;
+                    font-family: 'Glory', sans-serif;                
+                    font-weight: 800;
+                    color:white;
+                    border-bottom: .1rem white solid;
+                }
+                div {
+                    padding:.5rem;
+                    p{
+                        color:white;
+                        font-family: 'Glory', sans-serif;  
+                        font-style:italic ;             
+                        font-size:1.2rem;
+                    }
+                }
+            }
+            .quesDet2 {
+                .summ2 {
+                    color:red;
+                    padding:.5rem;
+                    font-size:1.4rem;
+                    font-family: 'Glory', sans-serif;                
+                    font-weight: 800;
+                    color:white;
+                    border-bottom: .1rem white solid;
+                }
+                div {
+                    padding:.5rem;
+                    p{
+                        color:white;
+                        font-family: 'Glory', sans-serif;     
+                        font-style: italic;          
+                        font-size:1.2rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    
 }

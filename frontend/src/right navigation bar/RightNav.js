@@ -9,10 +9,12 @@ export const RightNav = () => {
                 <FontAwesomeIcon icon={faMusic}></FontAwesomeIcon>
             </div>
             <div className="options">
-                <FontAwesomeIcon icon={faNotesMedical}></FontAwesomeIcon>
+                <FontAwesomeIcon icon={faNotesMedical} className="optionsLogo"></FontAwesomeIcon>
             </div>
             <div className="copy-link">
-                <FontAwesomeIcon icon={faLink}></FontAwesomeIcon>
+                <FontAwesomeIcon
+                className="copy-linkLogo"
+                icon={faLink}></FontAwesomeIcon>
             </div>
         </div>
     )

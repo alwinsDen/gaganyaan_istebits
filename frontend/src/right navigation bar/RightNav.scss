@@ -4,6 +4,7 @@
         position: absolute;
         width:9vw;
         right:0;
+        top:6rem;
         height: 480px;
         display:flex;
         flex-direction: column;
@@ -29,6 +30,7 @@
             margin-right:2rem;
             width:120%;
             font-size:4rem;
+            
         }
         .options:hover {
             transition-duration: .3s;
@@ -36,6 +38,7 @@
             margin-right:2rem;
             width:120%;
             font-size:4rem;
+            
         }
         .copy-link:hover {
             transition-duration: .3s;
@@ -43,6 +46,7 @@
             margin-right:2rem;
             width:120%;
             font-size:4rem;
+           
         }
     }
 }

@@ -11,13 +11,24 @@
         color:white;
         display:flex;
         align-items: center;
-        justify-content:center;
+        // justify-content:center;
+        top:0;
+        position: absolute;
+        background:rgba(116, 104, 104, 0.493);
+        width:100vw;
         .heading {
-            font-size: 4rem;
+            font-size: 3rem;
+            .rocketLogo{
+                animation: rocketAnim 10s infinite;
+            }
+            @keyframes rocketAnim {
+                0% {transform: rotate(0deg);}
+                100% {transform: rotate(360deg);}
+            }
         }
         .subheading {
             font-style: italic;
-            font-size: 1rem;
+            font-size: 1.2rem;
         }
     }
 }
@@ -29,12 +40,24 @@
         justify-content:center;
         .heading {
             font-size: 3rem;
+            .rocketLogo{
+                animation: rocketAnim 10s infinite;
+                color:white
+            }
+            @keyframes rocketAnim {
+                0% {transform: rotate(0deg);}
+                100% {transform: rotate(360deg);}
+            }
+            .moonLogo{
+                color:white;
+            }
         }
         .subheading {
             & > * {
                 font-style: italic;
                 font-size: 1.5rem;
                 font-family: 'glory';
+                font-weight: 800;
             }
         }
     }

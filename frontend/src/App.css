@@ -3,6 +3,8 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  -webkit-transition-duration: .4s;
+          transition-duration: .4s;
 }
 
 .App {

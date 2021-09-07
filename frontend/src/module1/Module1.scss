@@ -1,13 +1,15 @@
 @media only screen and (min-width:500px) {
     .module1 {
-        border:1px white solid;
-        border-radius: 10px;
+        border:1px orange solid;
+        border-radius: 10px 10px 0 0;
         display: flex;
         justify-content: center;
         background-color: red;
         align-items: center;
         width: 80vw;
+        margin-top:7rem;
         overflow: hidden;
+        cursor: move;
         .loadersSec{
             position: absolute;
             display: flex;
@@ -35,6 +37,39 @@
                 color:white;
                 font-style: italic;
                 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+        }
+        .instuctionScreen{
+            position:absolute;
+            color:white;
+            display:flex;
+            width:75vw;
+            height: 440px;
+            align-items: center;
+            justify-content: space-evenly; 
+            border-radius: 20px; 
+            background:rgba(114, 103, 103, 0.527);
+            p{
+                text-align: center;
+                font-family: monospace;
+                font-size: 2rem;
+            }  
+            .mouseIcon1 {
+                font-size: 15rem;
+                animation: myicon 5s infinite;
+            }  
+            .plusIcon {
+                color:white;
+                font-size:6rem;
+            }
+            .keyboardIcon1 {
+                font-size: 15rem;
+                animation: myicon 5s infinite;
+            }   
+            @keyframes myicon {
+                0%{transform:rotate(-45deg);}
+                50%{transform:rotate(45deg);}
+                100%{transform:rotate(-45deg);}
             }
         }
     }
