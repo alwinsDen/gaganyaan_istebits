@@ -71,4 +71,78 @@
     font-size: 1.2rem;
   }
 }
+
+@media only screen and (max-width: 500px) {
+  .module2 {
+    background: orange;
+    width: 96vw;
+    left: 0;
+  }
+  .module2 .question1 details[open] summary ~ * {
+    -webkit-animation: sweep .5s ease-in-out;
+            animation: sweep .5s ease-in-out;
+  }
+  @-webkit-keyframes sweep {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateX(-10px);
+              transform: translateX(-10px);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+  }
+  @keyframes sweep {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateX(-10px);
+              transform: translateX(-10px);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+  }
+  .module2 .question1 .quesDet1 .summ1 {
+    color: red;
+    padding: .3rem;
+    font-size: 1.4rem;
+    font-family: 'Glory', sans-serif;
+    font-weight: 800;
+    color: white;
+    border-bottom: .1rem white solid;
+    cursor: pointer;
+  }
+  .module2 .question1 .quesDet1 div {
+    padding: .5rem;
+  }
+  .module2 .question1 .quesDet1 div p {
+    color: white;
+    font-family: 'Glory', sans-serif;
+    font-style: italic;
+    font-size: 1.2rem;
+  }
+  .module2 .question1 .quesDet2 .summ2 {
+    color: red;
+    padding: .3rem;
+    font-size: 1.4rem;
+    font-family: 'Glory', sans-serif;
+    font-weight: 800;
+    color: white;
+    border-bottom: .1rem white solid;
+    cursor: pointer;
+  }
+  .module2 .question1 .quesDet2 div {
+    padding: .5rem;
+  }
+  .module2 .question1 .quesDet2 div p {
+    color: white;
+    font-family: 'Glory', sans-serif;
+    font-style: italic;
+    font-size: 1.2rem;
+  }
+}
 /*# sourceMappingURL=Module2.css.map */

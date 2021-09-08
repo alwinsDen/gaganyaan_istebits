@@ -69,6 +69,10 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    top: 0;
+    position: absolute;
+    background: rgba(93, 146, 170, 0.74);
+    width: 100vw;
   }
   .module0 .heading {
     font-size: 3rem;
@@ -103,7 +107,7 @@
   }
   .module0 .subheading > * {
     font-style: italic;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-family: 'glory';
     font-weight: 800;
   }

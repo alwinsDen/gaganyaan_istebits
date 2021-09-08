@@ -59,5 +59,62 @@
 }
 
 @media only screen and (max-width: 500px) {
-    
+    .module2 {
+        // display: none;
+        background:orange;
+        width:96vw;
+        left: 0;
+        .question1{
+            details[open] summary ~ * {
+                animation: sweep .5s ease-in-out;
+              }
+              
+              @keyframes sweep {
+                0%    {opacity: 0; transform: translateX(-10px)}
+                100%  {opacity: 1; transform: translateX(0)}
+              }
+            .quesDet1 {
+                .summ1 {
+                    color:red;
+                    padding:.3rem;
+                    font-size:1.4rem;
+                    font-family: 'Glory', sans-serif;                
+                    font-weight: 800;
+                    color:white;
+                    border-bottom: .1rem white solid;
+                    cursor:pointer;
+                }
+                div {
+                    padding:.5rem;
+                    p{
+                        color:white;
+                        font-family: 'Glory', sans-serif;  
+                        font-style:italic ;             
+                        font-size:1.2rem;
+                    }
+                }
+            }
+            .quesDet2 {
+                .summ2 {
+                    color:red;
+                    padding:.3rem;
+                    font-size:1.4rem;
+                    font-family: 'Glory', sans-serif;                
+                    font-weight: 800;
+                    color:white;
+                    border-bottom: .1rem white solid;
+                    cursor:pointer;
+                }
+                div {
+                    padding:.5rem;
+                    p{
+                        color:white;
+                        font-family: 'Glory', sans-serif;     
+                        font-style: italic;          
+                        font-size:1.2rem;
+                    }
+                }
+            }
+        }
+    }
 }

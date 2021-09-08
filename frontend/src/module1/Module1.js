@@ -5,7 +5,7 @@ import {GLTFLoader} from 'three/examples/jsm/loaders/GLTFLoader'
 import {OrbitControls} from "three/examples/jsm/controls/OrbitControls";
 import filepath from './../models/Perseverance.glb'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faKeyboard, faMouse, faPlus} from "@fortawesome/free-solid-svg-icons"
+import {faFingerprint, faHandHolding, faKeyboard, faMouse, faPlus} from "@fortawesome/free-solid-svg-icons"
 
 export const Module1 = () => {
     useEffect(()=>
@@ -35,7 +35,7 @@ export const Module1 = () => {
         //!GLTF importing
         const loader = new GLTFLoader();
         loader.load(filepath,function(gltf){
-            console.log(gltf);
+            // console.log(gltf);
             const model = gltf.scene
             model.scale.set(1,1,1)
             model.rotation.set(0,0,0)
@@ -141,6 +141,24 @@ export const Module1 = () => {
                     />
                     <p>
                         Shift key
+                    </p>
+                </div>
+            </div>
+            <div className="mobileInstructions"
+            id="mobileInstructions"
+            onClick={
+                (e)=>
+                {document.getElementById("mobileInstructions").style.display = "none";
+                document.getElementById("summ1").click();
+                }
+            }
+            >
+                <div>
+                    <FontAwesomeIcon icon={faFingerprint}
+                    className="handicon"
+                    />
+                    <p>
+                        Drag 3d model
                     </p>
                 </div>
             </div>

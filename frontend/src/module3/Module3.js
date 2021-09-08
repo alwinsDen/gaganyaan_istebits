@@ -23,24 +23,13 @@ export const Module3 = () => {
       });
       const loader = new GLTFLoader();
         loader.load(filepath,function(gltf){
-            console.log(gltf);
+            // console.log(gltf);
             const model = gltf.scene
             model.scale.set(.7,.7,.7)
             model.rotation.set(0,0,0)
             scene.add(model);
         }, (xhr) => {
-            let loadNumber = (xhr.loaded/xhr.total*100).toString().slice(0,3);   
-            document.getElementById("loaderpercent3").innerHTML = `${loadNumber+'%'}`
-            document.getElementById("loaderRender3").value = (loadNumber === "Inf" ? 100 :parseInt(loadNumber));
-            if (loadNumber == "Inf") document.getElementById("loadersSec3").style.display = 'none'; 
-            const loaderDoc = document.getElementById("loadersSec3");
-            if (loaderDoc !== null || loaderDoc !== undefined) {
-                if (loadNumber === "Inf" || loadNumber==="100") 
-                {
-                    document.getElementById("loadersSec3").style.display = 'none';
-                }
-
-            }
+            
         }, (error)=>{
             console.log(error);
         })
@@ -88,11 +77,7 @@ export const Module3 = () => {
     }
     return (
         <div className="module3" id="module3">
-             <div className="loadersSec3" id="loadersSec3">
-                <p id="loaderpercent3"></p>
-                <progress  id="loaderRender3" max="100"></progress>
-                <p className="d3Env3">Loading 3d environment</p>
-            </div>
+            
         </div>
     )
 }
