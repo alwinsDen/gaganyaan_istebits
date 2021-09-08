@@ -1,9 +1,9 @@
-import React,{useEffect,useState} from 'react'
+import React,{useEffect} from 'react'
 import "./Module1.css"
 import * as THREE from 'three'
 import {GLTFLoader} from 'three/examples/jsm/loaders/GLTFLoader'
 import {OrbitControls} from "three/examples/jsm/controls/OrbitControls";
-import filepath from './Perseverance.glb'
+import filepath from './../models/Perseverance.glb'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faKeyboard, faMouse, faPlus} from "@fortawesome/free-solid-svg-icons"
 
@@ -89,7 +89,7 @@ export const Module1 = () => {
         
         //!to set the camera in respect to the size of the window
         window.addEventListener('resize',function(){
-            let width = window.innerWidth;
+            let width   = window.innerWidth;
             let height = window.innerHeight;
             renderer.setSize(width, height);
             camera.aspect=width/height;
@@ -119,7 +119,9 @@ export const Module1 = () => {
             <div className="instuctionScreen" id="instuctionScreen"
             onClick={
                 (e)=>
-                document.getElementById("instuctionScreen").style.display = "none" 
+                {document.getElementById("instuctionScreen").style.display = "none";
+                document.getElementById("summ1").click();
+                }
             }
             >
                 <div>
@@ -127,7 +129,7 @@ export const Module1 = () => {
                     className="mouseIcon1"
                     />
                     <p>
-                        Click mouse 
+                        Drag mouse 
                     </p>
                 </div>
                 <div>

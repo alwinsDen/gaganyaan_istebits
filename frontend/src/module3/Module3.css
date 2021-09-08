@@ -1,0 +1,59 @@
+@media only screen and (min-width: 500px) {
+  .module3 {
+    border: 1px white solid;
+    border-radius: 10px 10px 0 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: red;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 80vw;
+    margin-top: 3rem;
+    overflow: hidden;
+    cursor: move;
+  }
+  .module3 .loadersSec3 {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .module3 .loadersSec3 #loaderpercent3 {
+    color: white;
+    font-size: 10rem;
+    background: black;
+    border-radius: 50px 50px 0 0;
+  }
+  .module3 .loadersSec3 progress {
+    border: 2px white solid;
+    border-radius: 1rem;
+    overflow: hidden;
+    background: white;
+    height: 1rem;
+  }
+  .module3 .loadersSec3 .d3Env3 {
+    font-size: 3rem;
+    background: black;
+    padding: 0 10 0 10;
+    font-weight: 800;
+    color: white;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+}
+/*# sourceMappingURL=Module3.css.map */

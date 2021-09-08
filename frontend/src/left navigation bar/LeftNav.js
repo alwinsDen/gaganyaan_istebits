@@ -8,7 +8,12 @@ export const LeftNav = () => {
             <div className="backwardpage">
                 <FontAwesomeIcon icon={faArrowUp}></FontAwesomeIcon>
             </div>
-            <div className="infoModels">
+            <div className="infoModels"
+            onClick={
+                ()=> {
+                }
+            }
+            >
                 <FontAwesomeIcon icon={faInfo}></FontAwesomeIcon>
             </div>
             <div className="forwardpage">

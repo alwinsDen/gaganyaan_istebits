@@ -1,15 +1,19 @@
 import React from 'react'
+
 import "./Module2.css"
 export const Module2 = () => {
     return (
         <div className="module2">
             <div className="question1">
                 <details className="quesDet1">
-                    <summary className="summ1">
+                    <summary className="summ1"
+                    id="summ1"
+                    >
                         What is ISRO's Gaganyaan mission?
                     </summary>
                     <div>
-                        <p>
+                        <p
+                        >
                         The Gaganyaan Programme envisages undertaking the demonstration of human spaceflight to Low Earth Orbit (LEO) in the short-term and will lay the foundation for a sustained Indian human space exploration programme in the long run.
                         </p>
                         <br />
@@ -23,7 +27,9 @@ export const Module2 = () => {
                     </div>
                 </details>
                 <details className="quesDet2">
-                    <summary className="summ2">
+                    <summary className="summ2"
+                    id="summ2"
+                    >
                         About the 3D model?
                     </summary>
                     <div>

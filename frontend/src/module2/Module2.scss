@@ -4,6 +4,14 @@
         width: 80vw;
         background:orange;
         .question1{
+            details[open] summary ~ * {
+                animation: sweep .5s ease-in-out;
+              }
+              
+              @keyframes sweep {
+                0%    {opacity: 0; transform: translateX(-10px)}
+                100%  {opacity: 1; transform: translateX(0)}
+              }
             .quesDet1 {
                 .summ1 {
                     color:red;
@@ -13,6 +21,7 @@
                     font-weight: 800;
                     color:white;
                     border-bottom: .1rem white solid;
+                    cursor:pointer;
                 }
                 div {
                     padding:.5rem;
@@ -33,6 +42,7 @@
                     font-weight: 800;
                     color:white;
                     border-bottom: .1rem white solid;
+                    cursor:pointer;
                 }
                 div {
                     padding:.5rem;
