@@ -8,10 +8,6 @@
 }
 
 .App {
-  background: url(https://raw.githubusercontent.com/alwinsDen/gaganyaan_istebits/main/frontend/src/wallpapers/main%20background.jpg?token=ASAE6PXQUKBWIKXFPBYCV5TBIA2VY);
-  background-position: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
   overflow-y: scroll;
   height: 100vh;
 }
@@ -34,6 +30,15 @@
 
 .App::-webkit-scrollbar {
   display: none;
+}
+
+.App #backVid1 {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: -10;
+  min-width: 100vw;
+  min-height: 100vh;
 }
 
 .App h1 {

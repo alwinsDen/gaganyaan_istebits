@@ -2,6 +2,7 @@ import React from 'react'
 import "./Module0.css"
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faMoon, faRocket} from '@fortawesome/free-solid-svg-icons'
+
 export const Module0 = () => {
     return (
         <div className="module0">

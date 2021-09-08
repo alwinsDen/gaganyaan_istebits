@@ -12,6 +12,7 @@ export const Module1 = () => {
     {
         animation();
         document.getElementById("instuctionScreen").style.display = "none";
+        document.getElementById("mobileInstructions").style.display = "none";
     },[])
     const animation=()=> {
         const scene = new THREE.Scene()
@@ -55,6 +56,7 @@ export const Module1 = () => {
                 {
                     document.getElementById("loadersSec").style.display = 'none';
                     document.getElementById("instuctionScreen").style.display = "";
+                    document.getElementById("mobileInstructions").style.display = "";
                 }
 
             }

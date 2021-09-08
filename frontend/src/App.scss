@@ -14,10 +14,18 @@
     &::-webkit-scrollbar {
         display: none;
       }
-    background: url(https://raw.githubusercontent.com/alwinsDen/gaganyaan_istebits/main/frontend/src/wallpapers/main%20background.jpg?token=ASAE6PXQUKBWIKXFPBYCV5TBIA2VY);
-    background-position: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
+    // background: url(https://images.pexels.com/photos/76969/cold-front-warm-front-hurricane-felix-76969.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    // background-position: fixed;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    #backVid1{
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        z-index: -10;
+        min-width: 100vw; 
+        min-height: 100vh;
+    }
     overflow-y: scroll;
     height:100vh;
     h1 {
