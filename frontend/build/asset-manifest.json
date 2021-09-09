@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.ab943edc.chunk.css",
-    "main.js": "/static/js/main.ac4ed5cd.chunk.js",
-    "main.js.map": "/static/js/main.ac4ed5cd.chunk.js.map",
+    "main.js": "/static/js/main.6dbe7e82.chunk.js",
+    "main.js.map": "/static/js/main.6dbe7e82.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.4c5acccb.js",
     "runtime-main.js.map": "/static/js/runtime-main.4c5acccb.js.map",
     "static/js/2.a41a1c92.chunk.js": "/static/js/2.a41a1c92.chunk.js",
@@ -12,8 +12,9 @@
     "index.html": "/index.html",
     "static/css/main.ab943edc.chunk.css.map": "/static/css/main.ab943edc.chunk.css.map",
     "static/js/2.a41a1c92.chunk.js.LICENSE.txt": "/static/js/2.a41a1c92.chunk.js.LICENSE.txt",
-    "static/js/main.ac4ed5cd.chunk.js.LICENSE.txt": "/static/js/main.ac4ed5cd.chunk.js.LICENSE.txt",
+    "static/js/main.6dbe7e82.chunk.js.LICENSE.txt": "/static/js/main.6dbe7e82.chunk.js.LICENSE.txt",
     "static/media/Perseverance.fa3ed586.glb": "/static/media/Perseverance.fa3ed586.glb",
+    "static/media/backMusic.b6225927.mp3": "/static/media/backMusic.b6225927.mp3",
     "static/media/mark1.2d424aac.glb": "/static/media/mark1.2d424aac.glb",
     "static/media/video.fa39d4ab.mp4": "/static/media/video.fa39d4ab.mp4"
   },
@@ -21,6 +22,6 @@
     "static/js/runtime-main.4c5acccb.js",
     "static/js/2.a41a1c92.chunk.js",
     "static/css/main.ab943edc.chunk.css",
-    "static/js/main.ac4ed5cd.chunk.js"
+    "static/js/main.6dbe7e82.chunk.js"
   ]
 }
