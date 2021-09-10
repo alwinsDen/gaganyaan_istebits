@@ -1,0 +1,43 @@
+@media only screen and (min-width: 500px) {
+  .module5 {
+    border: 1px lightgreen solid;
+    border-radius: 10px 10px 0 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: red;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 80vw;
+    margin-top: 3rem;
+    overflow: hidden;
+    cursor: move;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .module5 {
+    border: 1px lightgreen solid;
+    border-radius: 10px 10px 0 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: red;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 96vw;
+    height: 100vw;
+    margin-top: 1rem;
+    overflow: hidden;
+    cursor: move;
+  }
+}
+/*# sourceMappingURL=Module5.css.map */

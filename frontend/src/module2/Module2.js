@@ -3,7 +3,8 @@ import React from 'react'
 import "./Module2.css"
 export const Module2 = () => {
     return (
-        <div className="module2">
+        <div className="module2"
+        id="module2">
             <div className="question1">
                 <details className="quesDet1">
                     <summary className="summ1"

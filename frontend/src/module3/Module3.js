@@ -4,8 +4,6 @@ import * as THREE from 'three'
 import {GLTFLoader} from 'three/examples/jsm/loaders/GLTFLoader'
 import {OrbitControls} from "three/examples/jsm/controls/OrbitControls";
 import filepath from './../models/mark1.glb'
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faKeyboard, faMouse, faPlus} from "@fortawesome/free-solid-svg-icons"
 export const Module3 = () => {
     useEffect(()=> {
         animation();

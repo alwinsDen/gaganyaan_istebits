@@ -5,7 +5,7 @@ import {GLTFLoader} from 'three/examples/jsm/loaders/GLTFLoader'
 import {OrbitControls} from "three/examples/jsm/controls/OrbitControls";
 import filepath from './../models/Perseverance.glb'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faFingerprint, faHandHolding, faKeyboard, faMouse, faPlus} from "@fortawesome/free-solid-svg-icons"
+import {faFingerprint, faKeyboard, faMouse, faPlus} from "@fortawesome/free-solid-svg-icons"
 
 export const Module1 = () => {
     useEffect(()=>
@@ -49,7 +49,7 @@ export const Module1 = () => {
 // console.log(string.slice(0, 2)); // "01"    
             document.getElementById("loaderpercent").innerHTML = `${loadNumber+'%'}`
             document.getElementById("loaderRender").value = (loadNumber === "Inf" ? 100 :parseInt(loadNumber));
-            if (loadNumber == "Inf") document.getElementById("loadersSec").style.display = 'none'; 
+            if (loadNumber === "Inf") document.getElementById("loadersSec").style.display = 'none'; 
             const loaderDoc = document.getElementById("loadersSec");
             if (loaderDoc !== null || loaderDoc !== undefined) {
                 if (loadNumber === "Inf" || loadNumber==="100") 

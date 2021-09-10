@@ -1,0 +1,113 @@
+@media only screen and (min-width: 500px) {
+    .Module7{
+        margin-top:2rem;
+        width:100vw;
+        background:rgba(58, 53, 53, 0.658);
+        color:white;
+        height:8rem;
+        display:flex;
+        flex-flow:column;
+        // align-items: center;
+        justify-content:center;
+        margin-bottom: 2rem;
+        .relTitle{
+            text-align: center;
+            font-weight: 700;
+        }
+        .relLinks {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            .relLinkers{
+                // display: flex;
+                display: grid;
+                grid-auto-flow: column;
+                gap:4rem;
+                a:hover{
+                    color:skyblue;
+                }
+                & > * {
+                    text-decoration: none;
+                    color:pink;
+                    text-decoration: underline;
+                    font-style:italic;
+                }
+            }
+        }
+        .relAuthor{
+            display:flex;
+            margin-top:1rem;
+            flex-flow:column;
+            align-items:center;
+            justify-content:center;
+            div{
+                display:flex;
+                flex-flow:column;
+                // align-items: ;
+                & > * {
+                    text-decoration:none;
+                    color:pink;
+                    font-style: italic;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 500px) {
+    .Module7{
+        margin-top:1rem;
+        width:100vw;
+        background:rgba(58, 53, 53, 0.658);
+        color:white;
+        display:flex;
+        flex-flow:column;
+        // align-items: center;
+        justify-content:center;
+        margin-bottom: 2rem;
+        padding: 1rem 0 1rem 0;
+        .relTitle{
+            text-align: center;
+            font-weight: 700;
+        }
+        .relLinks {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            .relLinkers{
+                // display: flex;
+                display: grid;
+                // grid-auto-flow: rwo;
+                gap:.1rem;
+                a:hover{
+                    color:skyblue;
+                }
+                & > * {
+                    text-decoration: none;
+                    color:pink;
+                    text-decoration: underline;
+                    font-style:italic;
+                    font-size:1rem;
+                }
+            }
+        }
+        .relAuthor{
+            display:flex;
+            margin-top:1rem;
+            flex-flow:column;
+            align-items:center;
+            justify-content:center;
+            div{
+                display:flex;
+                flex-flow:column;
+                // align-items: ;
+                & > * {
+                    text-decoration:none;
+                    color:pink;
+                    font-style: italic;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

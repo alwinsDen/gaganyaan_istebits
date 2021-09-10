@@ -1,0 +1,164 @@
+@media only screen and (min-width: 500px) {
+  .Module7 {
+    margin-top: 2rem;
+    width: 100vw;
+    background: rgba(58, 53, 53, 0.658);
+    color: white;
+    height: 8rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 2rem;
+  }
+  .Module7 .relTitle {
+    text-align: center;
+    font-weight: 700;
+  }
+  .Module7 .relLinks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .Module7 .relLinks .relLinkers {
+    display: -ms-grid;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 4rem;
+  }
+  .Module7 .relLinks .relLinkers a:hover {
+    color: skyblue;
+  }
+  .Module7 .relLinks .relLinkers > * {
+    text-decoration: none;
+    color: pink;
+    text-decoration: underline;
+    font-style: italic;
+  }
+  .Module7 .relAuthor {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 1rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .Module7 .relAuthor div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  .Module7 .relAuthor div > * {
+    text-decoration: none;
+    color: pink;
+    font-style: italic;
+    text-decoration: underline;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .Module7 {
+    margin-top: 1rem;
+    width: 100vw;
+    background: rgba(58, 53, 53, 0.658);
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 2rem;
+    padding: 1rem 0 1rem 0;
+  }
+  .Module7 .relTitle {
+    text-align: center;
+    font-weight: 700;
+  }
+  .Module7 .relLinks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .Module7 .relLinks .relLinkers {
+    display: -ms-grid;
+    display: grid;
+    gap: .1rem;
+  }
+  .Module7 .relLinks .relLinkers a:hover {
+    color: skyblue;
+  }
+  .Module7 .relLinks .relLinkers > * {
+    text-decoration: none;
+    color: pink;
+    text-decoration: underline;
+    font-style: italic;
+    font-size: 1rem;
+  }
+  .Module7 .relAuthor {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 1rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .Module7 .relAuthor div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  .Module7 .relAuthor div > * {
+    text-decoration: none;
+    color: pink;
+    font-style: italic;
+    text-decoration: underline;
+  }
+}
+/*# sourceMappingURL=Module7.css.map */

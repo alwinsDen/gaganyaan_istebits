@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Glory&display=swap");
+@media only screen and (min-width: 500px) {
+  .Module4 {
+    width: 80vw;
+    background: white;
+  }
+  .Module4 .question1 details[open] summary ~ * {
+    -webkit-animation: sweep .5s ease-in-out;
+            animation: sweep .5s ease-in-out;
+  }
+  @-webkit-keyframes sweep {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateX(-10px);
+              transform: translateX(-10px);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+  }
+  @keyframes sweep {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateX(-10px);
+              transform: translateX(-10px);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+  }
+  .Module4 .question1 .quesDet1 .summ14 {
+    color: red;
+    padding: .5rem;
+    font-size: 1.4rem;
+    font-family: 'Glory', sans-serif;
+    font-weight: 800;
+    color: black;
+    border-bottom: .1rem lightgreen solid;
+    cursor: pointer;
+  }
+  .Module4 .question1 .quesDet1 div {
+    padding: .5rem;
+  }
+  .Module4 .question1 .quesDet1 div p {
+    color: black;
+    font-family: 'Glory', sans-serif;
+    font-style: italic;
+    font-size: 1.2rem;
+  }
+  .Module4 .question1 .quesDet2 .summ2 {
+    color: red;
+    padding: .5rem;
+    font-size: 1.4rem;
+    font-family: 'Glory', sans-serif;
+    font-weight: 800;
+    color: black;
+    border-bottom: .1rem lightgreen solid;
+    cursor: pointer;
+  }
+  .Module4 .question1 .quesDet2 div {
+    padding: .5rem;
+  }
+  .Module4 .question1 .quesDet2 div p {
+    color: black;
+    font-family: 'Glory', sans-serif;
+    font-style: italic;
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .Module4 {
+    background: white;
+    width: 96vw;
+    left: 0;
+  }
+  .Module4 .question1 details[open] summary ~ * {
+    -webkit-animation: sweep .5s ease-in-out;
+            animation: sweep .5s ease-in-out;
+  }
+  @-webkit-keyframes sweep {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateX(-10px);
+              transform: translateX(-10px);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+  }
+  @keyframes sweep {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateX(-10px);
+              transform: translateX(-10px);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+  }
+  .Module4 .question1 .quesDet1 .summ14 {
+    color: red;
+    padding: .3rem;
+    font-size: 1.4rem;
+    font-family: 'Glory', sans-serif;
+    font-weight: 800;
+    color: black;
+    border-bottom: .1rem lightgreen solid;
+    cursor: pointer;
+  }
+  .Module4 .question1 .quesDet1 div {
+    padding: .5rem;
+  }
+  .Module4 .question1 .quesDet1 div p {
+    color: black;
+    font-family: 'Glory', sans-serif;
+    font-style: italic;
+    font-size: 1.2rem;
+  }
+  .Module4 .question1 .quesDet2 .summ2 {
+    color: red;
+    padding: .3rem;
+    font-size: 1.4rem;
+    font-family: 'Glory', sans-serif;
+    font-weight: 800;
+    color: black;
+    border-bottom: .1rem lightgreen solid;
+    cursor: pointer;
+  }
+  .Module4 .question1 .quesDet2 div {
+    padding: .5rem;
+  }
+  .Module4 .question1 .quesDet2 div p {
+    color: black;
+    font-family: 'Glory', sans-serif;
+    font-style: italic;
+    font-size: 1.2rem;
+  }
+}
+/*# sourceMappingURL=Module4.css.map */

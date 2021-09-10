@@ -1,0 +1,94 @@
+@media only screen and (min-width: 500px) {
+  .module8 {
+    z-index: 20;
+    position: absolute;
+    top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(62, 56, 63, 0.692);
+  }
+  .module8 .controllers {
+    color: white;
+    font-size: 3rem;
+    cursor: pointer;
+  }
+  .module8 .controllers :hover {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  .module8 .controllers :hover {
+    color: red;
+  }
+  .module8 .tabCover {
+    background: white;
+    height: 50vh;
+    border-radius: 2rem;
+    padding: 1rem;
+    border: 0.3rem #353577 solid;
+  }
+  .module8 .tabCover .references {
+    font-size: 2rem;
+  }
+  .module8 .tabCover .model1 {
+    margin-top: 1rem;
+    font-size: 1.7rem;
+    font-style: italic;
+    background: steelblue;
+    color: white;
+    cursor: pointer;
+  }
+  .module8 .tabCover .model1 :hover {
+    -webkit-box-shadow: .7rem .7rem 10px black;
+            box-shadow: .7rem .7rem 10px black;
+    background: lightblue;
+    color: black;
+  }
+  .module8 .tabCover .model2 {
+    margin-top: 1rem;
+    font-size: 1.7rem;
+    font-style: italic;
+    background: steelblue;
+    color: white;
+    cursor: pointer;
+  }
+  .module8 .tabCover .model2 :hover {
+    -webkit-box-shadow: .7rem .7rem 10px black;
+            box-shadow: .7rem .7rem 10px black;
+    background: lightblue;
+    color: black;
+  }
+  .module8 .tabCover .model3 {
+    margin-top: 1rem;
+    font-size: 1.7rem;
+    font-style: italic;
+    background: steelblue;
+    color: white;
+    cursor: pointer;
+  }
+  .module8 .tabCover .model3 :hover {
+    -webkit-box-shadow: .7rem .7rem 10px black;
+            box-shadow: .7rem .7rem 10px black;
+    background: lightblue;
+    color: black;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .module8 {
+    display: none;
+  }
+}
+/*# sourceMappingURL=Module8.css.map */

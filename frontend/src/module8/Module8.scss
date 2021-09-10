@@ -1,0 +1,79 @@
+@media only screen and (min-width: 500px) {
+    .module8{
+        z-index: 20;
+        position:absolute;
+        top:0;
+        display:flex;
+        flex-flow: column;
+        align-items:center;
+        justify-content:center;
+        height: 100vh;
+        width:100vw;
+        background:rgba(62, 56, 63, 0.692);
+        .controllers{
+            color:white;
+            font-size:3rem;
+            cursor:pointer;
+        }
+        .controllers :hover {
+            transform:rotate(90deg)
+        }
+        .controllers :hover {
+            color:red;
+        }
+        .tabCover{
+            background:white;
+            height:50vh;
+            border-radius: 2rem;
+            padding:1rem;
+            border:.3rem rgb(53, 53, 119) solid;
+            .references{
+                font-size:2rem;
+            }
+            .model1 {
+                margin-top:1rem;
+                font-size:1.7rem;
+                font-style:italic;
+                background:steelblue;
+                color:white;
+                cursor:pointer
+            }
+            .model1 :hover{
+                box-shadow: .7rem .7rem 10px black;
+                background:lightblue;
+                color:black;
+            }
+            .model2 {
+                margin-top:1rem;
+                font-size:1.7rem;
+                font-style:italic;
+                background:steelblue;
+                color:white;
+                cursor:pointer
+            }
+            .model2 :hover{
+                box-shadow: .7rem .7rem 10px black;
+                background:lightblue;
+                color:black;
+            }
+            .model3 {
+                margin-top:1rem;
+                font-size:1.7rem;
+                font-style:italic;
+                background:steelblue;
+                color:white;
+                cursor:pointer
+            }
+            .model3 :hover{
+                box-shadow: .7rem .7rem 10px black;
+                background:lightblue;
+                color:black;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 500px) {
+    .module8{
+        display:none;
+    }
+}
