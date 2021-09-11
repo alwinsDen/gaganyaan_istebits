@@ -5,7 +5,7 @@
     bottom: 0;
     right: 0;
     width: 20rem;
-    height: 10rem;
+    height: 50vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -17,6 +17,14 @@
         -ms-flex-flow: column;
             flex-flow: column;
     overflow: hidden;
+  }
+  .module9 .arrowClicker {
+    font-size: 3rem;
+    color: skyblue;
+    cursor: pointer;
+  }
+  .module9 .arrowClicker :hover {
+    color: red;
   }
   .module9 .model1 {
     margin-top: 1rem;
@@ -48,6 +56,10 @@
         -ms-flex-align: center;
             align-items: center;
   }
+  .module9 .model1 :hover {
+    -webkit-box-shadow: 1rem 1rem 20px lightcoral;
+            box-shadow: 1rem 1rem 20px lightcoral;
+  }
   .module9 .model1-done {
     margin-top: 1rem;
     background: white;
@@ -65,7 +77,106 @@
     -webkit-transition: 2s;
     transition: 2s;
   }
+  .module9 .model1-done p {
+    font-style: italic;
+  }
   .module9 .model1-done div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .module9-close {
+    background: black;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 6rem;
+    height: 10vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    overflow: hidden;
+    border-top-left-radius: 3rem;
+    border: white solid .2rem;
+    -webkit-transition: 2s;
+    transition: 2s;
+  }
+  .module9-close .arrowClicker {
+    font-size: 3rem;
+    color: white;
+    cursor: pointer;
+  }
+  .module9-close .arrowClicker :hover {
+    color: red;
+  }
+  .module9-close .model1 {
+    margin-top: 1rem;
+    background: white;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 90%;
+    padding: .5rem 1rem .5rem 1rem;
+    border: skyblue .3rem solid;
+    border-radius: .7rem;
+    -webkit-box-shadow: 1rem 1rem 20px black;
+            box-shadow: 1rem 1rem 20px black;
+    cursor: default;
+    -webkit-transition: width 2s;
+    transition: width 2s;
+  }
+  .module9-close .model1 p {
+    font-style: italic;
+  }
+  .module9-close .model1 div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .module9-close .model1 :hover {
+    -webkit-box-shadow: 1rem 1rem 20px lightcoral;
+            box-shadow: 1rem 1rem 20px lightcoral;
+  }
+  .module9-close .model1-done {
+    margin-top: 1rem;
+    background: white;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 90%;
+    color: green;
+    padding: .5rem 1rem .5rem 1rem;
+    border: lightgreen .3rem solid;
+    border-radius: .7rem;
+    -webkit-box-shadow: 1rem 1rem 20px green;
+            box-shadow: 1rem 1rem 20px green;
+    cursor: default;
+    -webkit-transition: 2s;
+    transition: 2s;
+  }
+  .module9-close .model1-done p {
+    font-style: italic;
+  }
+  .module9-close .model1-done div {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

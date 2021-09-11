@@ -4,7 +4,10 @@ import * as THREE from 'three'
 import {GLTFLoader} from 'three/examples/jsm/loaders/GLTFLoader'
 import {OrbitControls} from "three/examples/jsm/controls/OrbitControls";
 import filepath from './../models/Perseverance.glb'
+import {useDispatch} from "react-redux"
+import {model3ACT} from "../features/percentageState"
 export const Module5 = () => {
+    const dispatch = useDispatch();
     useEffect(()=> {
         animation();
     },[]);
@@ -27,7 +30,8 @@ export const Module5 = () => {
             model.rotation.set(0,0,0)
             scene.add(model);
         }, (xhr) => {
-            
+            let loadNumber = (xhr.loaded/xhr.total*100).toString().slice(0,3);
+            dispatch(model3ACT(loadNumber));
         }, (error)=>{
             console.log(error);
         })
