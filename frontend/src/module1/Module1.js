@@ -6,8 +6,10 @@ import {OrbitControls} from "three/examples/jsm/controls/OrbitControls";
 import filepath from './../models/Perseverance.glb'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faFingerprint, faKeyboard, faMouse, faPlus} from "@fortawesome/free-solid-svg-icons"
-
+import {useDispatch} from "react-redux"
+import {model1ACT} from "../features/percentageState"
 export const Module1 = () => {
+    const dispatch = useDispatch();
     useEffect(()=>
     {
         animation();
@@ -44,7 +46,7 @@ export const Module1 = () => {
         }, (xhr) => {
             // console.log( ( xhr.loaded / xhr.total * 100 ) + '% loaded' );
             let loadNumber = (xhr.loaded/xhr.total*100).toString().slice(0,3);
-            // console.log(loadNumber.toString().slice(0,2))
+            dispatch(model1ACT(loadNumber))
 //             const string = "0123456789";
 // console.log(string.slice(0, 2)); // "01"    
             document.getElementById("loaderpercent").innerHTML = `${loadNumber+'%'}`

@@ -30,7 +30,12 @@ export const RightNav = () => {
             >
                 <FontAwesomeIcon icon={faReceipt} className="optionsLogo"></FontAwesomeIcon>
             </div>
-            <div className="copy-link">
+            <div className="copy-link"
+            onClick={() => 
+            {
+                document.getElementById("Module7").scrollIntoView({block:"end",behavior:"smooth"})
+            }}
+            >
                 <FontAwesomeIcon
                 className="copy-linkLogo"
                 icon={faLink}></FontAwesomeIcon>

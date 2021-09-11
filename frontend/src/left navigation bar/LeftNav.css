@@ -19,6 +19,9 @@
         -ms-flex-align: center;
             align-items: center;
   }
+  .leftNav .leftNavLink {
+    display: none;
+  }
   .leftNav > * {
     display: -webkit-box;
     display: -ms-flexbox;

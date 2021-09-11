@@ -1,11 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Glory&display=swap");
-.module0 {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
 .module0 p {
   font-family: 'glory';
 }
@@ -19,15 +12,22 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     top: 0;
     position: absolute;
     background: black;
     width: 100vw;
+    height: 6rem;
   }
-  .module0 .heading {
+  .module0 .isroLogo {
+    height: 100%;
+  }
+  .module0 .headPart .heading {
     font-size: 3rem;
   }
-  .module0 .heading .rocketLogo {
+  .module0 .headPart .heading .rocketLogo {
     -webkit-animation: rocketAnim 10s infinite;
             animation: rocketAnim 10s infinite;
   }
@@ -39,6 +39,7 @@
     100% {
       -webkit-transform: rotate(360deg);
               transform: rotate(360deg);
+      color: orange;
     }
   }
   @keyframes rocketAnim {
@@ -49,11 +50,74 @@
     100% {
       -webkit-transform: rotate(360deg);
               transform: rotate(360deg);
+      color: orange;
     }
   }
-  .module0 .subheading {
+  .module0 .headPart .subheading {
     font-style: italic;
     font-size: 1.2rem;
+  }
+  .module0 .isteLogo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .module0 .isteLogo .spiderLogo {
+    font-size: 3.2rem;
+    -webkit-animation: spiderAnime 5s infinite;
+            animation: spiderAnime 5s infinite;
+  }
+  @-webkit-keyframes spiderAnime {
+    0% {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+    }
+    50% {
+      -webkit-transform: rotate(180deg);
+              transform: rotate(180deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  @keyframes spiderAnime {
+    0% {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+    }
+    50% {
+      -webkit-transform: rotate(180deg);
+              transform: rotate(180deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  .module0 .isteLogo .logoText {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .module0 .isteLogo .logoText p {
+    font-size: 1.3rem;
   }
 }
 
@@ -74,10 +138,13 @@
     background: rgba(0, 0, 0, 0.74);
     width: 100vw;
   }
-  .module0 .heading {
+  .module0 .isroLogo {
+    display: none;
+  }
+  .module0 .headPart .heading {
     font-size: 3rem;
   }
-  .module0 .heading .rocketLogo {
+  .module0 .headPart .heading .rocketLogo {
     -webkit-animation: rocketAnim 10s infinite;
             animation: rocketAnim 10s infinite;
     color: white;
@@ -102,14 +169,17 @@
               transform: rotate(360deg);
     }
   }
-  .module0 .heading .moonLogo {
+  .module0 .headPart .heading .moonLogo {
     color: white;
   }
-  .module0 .subheading > * {
+  .module0 .headPart .subheading > * {
     font-style: italic;
     font-size: 1.2rem;
     font-family: 'glory';
     font-weight: 800;
+  }
+  .module0 .isteLogo {
+    display: none;
   }
 }
 /*# sourceMappingURL=Module0.css.map */

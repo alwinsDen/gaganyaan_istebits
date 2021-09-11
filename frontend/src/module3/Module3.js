@@ -3,7 +3,7 @@ import "./Module3.css"
 import * as THREE from 'three'
 import {GLTFLoader} from 'three/examples/jsm/loaders/GLTFLoader'
 import {OrbitControls} from "three/examples/jsm/controls/OrbitControls";
-import filepath from './../models/mark1.glb'
+import filepath from '../models/mark1.glb'
 export const Module3 = () => {
     useEffect(()=> {
         animation();

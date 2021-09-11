@@ -13,6 +13,8 @@ import {Module5} from "./module5/Module5"
 import {Module6} from "./module6/Module6"
 import {Module7} from "./module7/Module7"
 import {Module8} from "./module8/Module8"
+import {Module9} from "./module9/Module9"
+import {CSSTransition} from "react-transition-group"
 
 import backVid from "./wallpapers/video.mp4"
 import backMusic from "./wallpapers/backMusic.mp3"
@@ -65,9 +67,18 @@ function App() {
         </LazyLoad>
         <Module6/>
         <Module7/>
-        {
+        {/* {
           windControl === true ? <Module8/> : null
-        }
+        } */}
+        <CSSTransition
+        in={windControl}
+        timeout={100}
+        classNames="alert"
+        unmountOnExit
+      >
+        <Module8/>
+      </CSSTransition>
+      <Module9/>
       </div>
     </div>
   );

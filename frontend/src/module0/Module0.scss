@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Glory&display=swap');
 .module0{
-    flex-direction: column;
     p{
         font-family: 'glory';
     }
@@ -11,24 +10,53 @@
         color:white;
         display:flex;
         align-items: center;
-        // justify-content:center;
+        justify-content:space-evenly;
         top:0;
         position: absolute;
         background:rgb(0, 0, 0);
         width:100vw;
-        .heading {
-            font-size: 3rem;
-            .rocketLogo{
-                animation: rocketAnim 10s infinite;
+        height:6rem;
+        .isroLogo{
+            height:100%;
+        }
+        .headPart{
+            .heading {
+                font-size: 3rem;
+                .rocketLogo{
+                    animation: rocketAnim 10s infinite;
+                }
+                @keyframes rocketAnim {
+                    0% {transform: rotate(0deg);}
+                    100% {transform: rotate(360deg);color:orange}
+                }
             }
-            @keyframes rocketAnim {
-                0% {transform: rotate(0deg);}
-                100% {transform: rotate(360deg);}
+            .subheading {
+                font-style: italic;
+                font-size: 1.2rem;
             }
         }
-        .subheading {
-            font-style: italic;
-            font-size: 1.2rem;
+        .isteLogo{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            .spiderLogo{
+                font-size:3.2rem;
+                animation: spiderAnime 5s infinite;
+            }
+            @keyframes spiderAnime {
+                0%{transform: rotate(0deg);}
+                50%{transform:rotate(180deg);}
+                100%{transform: rotate(360deg);}
+            }
+            .logoText{
+                display:flex;
+                flex-flow: column;
+                justify-content: center;
+                align-items: center;
+                p{
+                    font-size:1.3rem
+                }
+            }
         }
     }
 }
@@ -42,27 +70,35 @@
         position: absolute;
         background:rgba(0, 0, 0, 0.74);
         width:100vw;
-        .heading {
-            font-size: 3rem;
-            .rocketLogo{
-                animation: rocketAnim 10s infinite;
-                color:white
+        .isroLogo{
+            display:none;
+        }
+        .headPart{
+            .heading {
+                font-size: 3rem;
+                .rocketLogo{
+                    animation: rocketAnim 10s infinite;
+                    color:white
+                }
+                @keyframes rocketAnim {
+                    0% {transform: rotate(0deg);}
+                    100% {transform: rotate(360deg);}
+                }
+                .moonLogo{
+                    color:white;
+                }
             }
-            @keyframes rocketAnim {
-                0% {transform: rotate(0deg);}
-                100% {transform: rotate(360deg);}
-            }
-            .moonLogo{
-                color:white;
+            .subheading {
+                & > * {
+                    font-style: italic;
+                    font-size: 1.2rem;
+                    font-family: 'glory';
+                    font-weight: 800;
+                }
             }
         }
-        .subheading {
-            & > * {
-                font-style: italic;
-                font-size: 1.2rem;
-                font-family: 'glory';
-                font-weight: 800;
-            }
+        .isteLogo{
+            display:none;
         }
     }
 }

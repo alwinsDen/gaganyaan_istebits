@@ -7,6 +7,7 @@ export const Module7 = () => {
     return (
         <div
         className="Module7"
+        id="Module7"
         >
             <p
             className="relTitle"

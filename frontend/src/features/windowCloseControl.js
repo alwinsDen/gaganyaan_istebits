@@ -12,6 +12,6 @@ export const windowConSlice = createSlice({
     },
 });
 
-export const {windContrl} = windowConSlice.actions;;
+export const {windContrl} = windowConSlice.actions;
 
 export default windowConSlice.reducer;
