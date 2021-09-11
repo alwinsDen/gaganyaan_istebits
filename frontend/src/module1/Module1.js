@@ -43,6 +43,7 @@ export const Module1 = () => {
             model = gltf.scene
             model.scale.set(1,1,1)
             model.rotation.set(0,0,0)
+            model.position.y = -3;
             scene.add(model);
         }, (xhr) => {
             // console.log( ( xhr.loaded / xhr.total * 100 ) + '% loaded' );
@@ -70,7 +71,7 @@ export const Module1 = () => {
         const light = new THREE.DirectionalLight(0xffffff, 1)
         light.position.set(2,2,0)
         scene.add(light)
-        scene.add(new THREE.AxesHelper(500))
+        // scene.add(new THREE.AxesHelper(500))
         const camera = new THREE.PerspectiveCamera(window.innerWidth >400 ?50 :45, window.innerWidth/480, 0.1, 1000)
         
         //lighting
@@ -122,10 +123,10 @@ export const Module1 = () => {
         // scene.add( cube );
         // camera.position.z = 5;
         var animate = function () {
-          if(model) model.rotation.y +=0.01;
-          if(model) model.position.y +=0.01;
-          camera.rotation.x +=0.001;
-          camera.rotation.z +=0.001;
+            if(model) model.rotation.y +=0.01;
+            if(model) model.position.y +=0.01;
+            camera.rotation.x +=0.0005;
+            camera.rotation.z +=0.0005;
           requestAnimationFrame( animate );
           renderer.render( scene, camera );
         };

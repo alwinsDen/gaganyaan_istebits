@@ -58,11 +58,11 @@ function App() {
         <Module0/>      
         <Module1/>
         <Module2/>
-        <LazyLoad height={200} offset={100}>
+        <LazyLoad height={200} offset={1}>
           <Module3/>
         </LazyLoad>
         <Module4/>
-        <LazyLoad height={200} offset={100}>
+        <LazyLoad height={200} offset={1}>
           <Module5/>
         </LazyLoad>
         <Module6/>
