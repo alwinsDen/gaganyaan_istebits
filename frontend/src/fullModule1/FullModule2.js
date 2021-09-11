@@ -2,17 +2,18 @@ import React,{useEffect} from 'react'
 import * as THREE from 'three'
 import {GLTFLoader} from 'three/examples/jsm/loaders/GLTFLoader'
 import {OrbitControls} from "three/examples/jsm/controls/OrbitControls";
-import filepath from '../models/Perseverance.glb'
+import filepath from '../models/gslv.glb'
 export const FullModule2 = () => {
     useEffect(()=> {
         animation();
     },[]);
     const animation=()=> {
+        let model;
         const scene = new THREE.Scene()
 
         const imageLoader = new THREE.TextureLoader();
         const texture = imageLoader.load(
-      'https://cdn.eso.org/images/publicationjpg/potw1105a.jpg',
+      'https://cdn.eso.org/images/publicationjpg/vlt-mw-potw.jpg',
       () => {
         const rt = new THREE.WebGLCubeRenderTarget(texture.image.height);
         rt.fromEquirectangularTexture(renderer, texture);
@@ -21,8 +22,8 @@ export const FullModule2 = () => {
       const loader = new GLTFLoader();
         loader.load(filepath,function(gltf){
             // console.log(gltf);
-            const model = gltf.scene
-            model.scale.set(50,50,50)
+            model = gltf.scene
+            model.scale.set(.25,.25,.25)
             model.rotation.set(0,0,0)
             scene.add(model);
         }, (xhr) => {
@@ -34,7 +35,7 @@ export const FullModule2 = () => {
         light.position.set(2,2,0)
         scene.add(light)
     
-        const camera = new THREE.PerspectiveCamera(50, window.innerWidth/480, 0.1, 1000)
+        const camera = new THREE.PerspectiveCamera(60, window.innerWidth/480, 0.1, 1000)
         
         //lighting
         var width = 100;
@@ -49,9 +50,9 @@ export const FullModule2 = () => {
         const renderer = new THREE.WebGLRenderer();
         renderer.setSize( window.innerWidth,window.innerHeight-1);
         // console.log(camera.position.x);
-        camera.position.z = 120
-        camera.position.y = 150 
-        camera.position.x = 240
+        camera.position.z = 5
+        camera.position.y = 5 
+        camera.position.x = 5
         // camera.position.y = 10
         // camera.position.x = 9    
         renderer.render(scene, camera)
@@ -67,6 +68,7 @@ export const FullModule2 = () => {
         let controls = new OrbitControls(camera, renderer.domElement);
         controls.update();
         var animate = function () {
+        if (model) model.rotation.y += 0.01;
           requestAnimationFrame( animate );
           renderer.render( scene, camera );
         };

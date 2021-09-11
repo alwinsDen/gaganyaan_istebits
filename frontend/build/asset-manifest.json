@@ -1,20 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.77e14bda.chunk.css",
-    "main.js": "/static/js/main.894a9102.chunk.js",
-    "main.js.map": "/static/js/main.894a9102.chunk.js.map",
+    "main.css": "/static/css/main.8ba12d28.chunk.css",
+    "main.js": "/static/js/main.cef2d360.chunk.js",
+    "main.js.map": "/static/js/main.cef2d360.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.a731d4d8.js",
     "runtime-main.js.map": "/static/js/runtime-main.a731d4d8.js.map",
-    "static/js/2.7fb9059d.chunk.js": "/static/js/2.7fb9059d.chunk.js",
-    "static/js/2.7fb9059d.chunk.js.map": "/static/js/2.7fb9059d.chunk.js.map",
+    "static/js/2.2f957e8d.chunk.js": "/static/js/2.2f957e8d.chunk.js",
+    "static/js/2.2f957e8d.chunk.js.map": "/static/js/2.2f957e8d.chunk.js.map",
     "static/js/3.60e553b0.chunk.js": "/static/js/3.60e553b0.chunk.js",
     "static/js/3.60e553b0.chunk.js.map": "/static/js/3.60e553b0.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.77e14bda.chunk.css.map": "/static/css/main.77e14bda.chunk.css.map",
-    "static/js/2.7fb9059d.chunk.js.LICENSE.txt": "/static/js/2.7fb9059d.chunk.js.LICENSE.txt",
-    "static/js/main.894a9102.chunk.js.LICENSE.txt": "/static/js/main.894a9102.chunk.js.LICENSE.txt",
-    "static/media/Perseverance.fa3ed586.glb": "/static/media/Perseverance.fa3ed586.glb",
+    "static/css/main.8ba12d28.chunk.css.map": "/static/css/main.8ba12d28.chunk.css.map",
+    "static/js/2.2f957e8d.chunk.js.LICENSE.txt": "/static/js/2.2f957e8d.chunk.js.LICENSE.txt",
+    "static/js/main.cef2d360.chunk.js.LICENSE.txt": "/static/js/main.cef2d360.chunk.js.LICENSE.txt",
     "static/media/backMusic.b6225927.mp3": "/static/media/backMusic.b6225927.mp3",
+    "static/media/gaganyaan pics1.12ed3413.png": "/static/media/gaganyaan pics1.12ed3413.png",
+    "static/media/gaganyaan pics2.1bf1e848.png": "/static/media/gaganyaan pics2.1bf1e848.png",
+    "static/media/gaganyaan pics3.ecf6b414.png": "/static/media/gaganyaan pics3.ecf6b414.png",
     "static/media/gaganyaan vehicle.588cd0bc.glb": "/static/media/gaganyaan vehicle.588cd0bc.glb",
     "static/media/gslv.e1363687.glb": "/static/media/gslv.e1363687.glb",
     "static/media/paraVehicle.2f90b85d.glb": "/static/media/paraVehicle.2f90b85d.glb",
@@ -22,8 +24,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.a731d4d8.js",
-    "static/js/2.7fb9059d.chunk.js",
-    "static/css/main.77e14bda.chunk.css",
-    "static/js/main.894a9102.chunk.js"
+    "static/js/2.2f957e8d.chunk.js",
+    "static/css/main.8ba12d28.chunk.css",
+    "static/js/main.cef2d360.chunk.js"
   ]
 }

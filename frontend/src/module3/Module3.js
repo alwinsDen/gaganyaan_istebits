@@ -1,4 +1,4 @@
-import React,{useEffect} from 'react'
+import React,{useEffect, useState} from 'react'
 import "./Module3.css"
 import * as THREE from 'three'
 import {GLTFLoader} from 'three/examples/jsm/loaders/GLTFLoader'
@@ -8,11 +8,15 @@ import {useDispatch} from "react-redux"
 import {model2ACT} from "../features/percentageState"
 export const Module3 = () => {
     const dispatch=useDispatch();
+    const [timerTrigger, setTimetrigger] = useState(1);
     useEffect(()=> {
         animation();
-    },[]);
+        setTimeout(()=>setTimetrigger(state=>state+1)
+        ,80000)
+    },[timerTrigger]);
     const animation=()=> {
         let model, hemiLight, spotlight;
+        document.getElementById("module3").innerHTML="";
         const scene = new THREE.Scene()
 
         const imageLoader = new THREE.TextureLoader();

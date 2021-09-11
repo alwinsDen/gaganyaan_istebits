@@ -1,6 +1,6 @@
 import React from 'react'
-
 import "./Module2.css"
+import firstImage from "../models/gaganyaan pics1.png"
 export const Module2 = () => {
     return (
         <div className="module2"
@@ -10,7 +10,7 @@ export const Module2 = () => {
                     <summary className="summ1"
                     id="summ1"
                     >
-                        What is ISRO's Gaganyaan mission?
+                        What is Gaganyaan Programme? What are the goals/objectives of Gaganyaan programme?
                     </summary>
                     <div>
                         <p
@@ -31,11 +31,17 @@ export const Module2 = () => {
                     <summary className="summ2"
                     id="summ2"
                     >
-                        About the 3D model?
+                        What is the 3D model shown above?
                     </summary>
                     <div>
+                        <img src={firstImage} alt="" />
+                        &nbsp;
                         <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat amet ipsum dicta, tenetur commodi velit officiis dolores natus quis dolor quos. Quisquam ducimus aut at.
+                        Gaganyaan crew module is a fully autonomous 5.3 t (12,000 lb) spacecraft designed to carry a 3-member crew to orbit and safely return to the Earth after a mission duration of up to seven days. Its 2.9 t (6,400 lb) service module is powered by liquid propellant engines. 
+                        </p>
+                        &nbsp;
+                        <p>
+                        The crew module is mated to the service module, and together they constitute 8.2 t (18,000 lb) orbital module. The space capsule will have life support and environmental control systems. It will be equipped with emergency mission abort and emergency escape that can be done at the first stage or second stage of the rocket burn. The nose of the original version of the orbital vehicle was free for a docking mechanism, but primary entry was evidently through a side hatch secured by explosive bolts.
                         </p>
                     </div>
                 </details>

@@ -32,7 +32,7 @@ export const Module8 = () => {
                 }
                 >
                     <p>
-                        1. What is ISRO's Gaganyaan Mission?
+                        1.  What is Gaganyaan Programme? What are the goals/objectives of Gaganyaan programme?
                     </p>
                 </div>
                 <div className="model2"
@@ -43,7 +43,7 @@ export const Module8 = () => {
                     }
                 }>
                     <p>
-                        2. What are the benefits of the mission??
+                        2. What are the likely benefits as a result of undertaking Gaganyaan programme?
                     </p>
                 </div>
                 <div className="model3"
@@ -54,7 +54,7 @@ export const Module8 = () => {
                     }
                 }>
                     <p>
-                        3. Which agencies are cooperating with ISRO on Gaganyaan mission?
+                        3. How ISRO is executing the Gaganyaan programme?
                     </p>
                 </div>
             </div>

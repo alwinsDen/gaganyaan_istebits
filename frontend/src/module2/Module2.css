@@ -50,6 +50,10 @@
     font-family: 'Glory', sans-serif;
     font-style: italic;
     font-size: 1.2rem;
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
   .module2 .question1 .quesDet2 .summ2 {
     color: red;
@@ -64,11 +68,21 @@
   .module2 .question1 .quesDet2 div {
     padding: .5rem;
   }
+  .module2 .question1 .quesDet2 div img {
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .module2 .question1 .quesDet2 div p {
     color: white;
     font-family: 'Glory', sans-serif;
     font-style: italic;
     font-size: 1.2rem;
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
