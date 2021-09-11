@@ -1,1 +1,0 @@
-//!to set the camera in respect to the size of the window

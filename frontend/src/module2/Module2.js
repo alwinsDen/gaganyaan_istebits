@@ -1,6 +1,8 @@
 import React from 'react'
 import "./Module2.css"
 import firstImage from "../models/gaganyaan pics1.png"
+import newImage1 from "../models/actronautface.png"
+import newImage2 from "../models/actronautScale.png"
 export const Module2 = () => {
     return (
         <div className="module2"
@@ -25,6 +27,24 @@ export const Module2 = () => {
                         <p>
                         As part of this programme, two unmanned missions and one manned mission are approved by Government of India (GoI). 
                         </p>
+                        <div>
+                            <div className="firstImage1">
+                                <img src={newImage2} alt="" className="firstImageName1"/>
+                                <div>
+                                    <p>
+                                        The scale of Module compared to a Vyomnaut. 1-3 Vyomnauts will stay in the module for about 7 days in Lower Earth Orbit.
+                                    </p>
+                                </div>
+                            </div>
+                            <div>
+                            <div>
+                                    <p>
+                                        A close-up view of the Vyomnaut suit.Rendered in Blender 2.93
+                                    </p>
+                                </div>
+                                <img src={newImage1} alt="" className="firstImageName2"/>
+                            </div>
+                        </div>
                     </div>
                 </details>
                 <details className="quesDet2">
